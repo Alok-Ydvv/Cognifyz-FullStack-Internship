@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Registration Page -->
+    <div id="registerPage">
+        <h2>Registration Form</h2>
+
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Email">
+            <small class="error" id="emailError"></small>
+
+            <input type="password" id="password" placeholder="Password">
+            <div id="strength"></div>
+            <small class="error" id="passwordError"></small>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <small class="error" id="confirmError"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" style="display:none;">
+        <h2>Welcome 🎉</h2>
+        <p id="welcomeUser"></p>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
